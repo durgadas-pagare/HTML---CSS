@@ -1,0 +1,8 @@
+<h1 style="color: rgb(181, 216, 86);">Hello Buddy!</h1>
+<p style="color: rgb(149, 149, 222);">I am learning CSS.</p>
+
+<style>
+    h1 {
+        color: rgb(220, 212, 124);
+    }
+</style>
