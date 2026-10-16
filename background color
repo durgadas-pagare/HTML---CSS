@@ -1,0 +1,11 @@
+<h1 style="color: red;">Hello Buddy!</h1>
+<p style="color: blue;">I am learning CSS.</p>
+<style>
+    h1 {
+        background: yellow;
+    }
+
+    p {
+        background: lightblue;
+    }
+</style>
