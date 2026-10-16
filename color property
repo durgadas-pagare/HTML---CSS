@@ -1,0 +1,12 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+
+    <h1 style="color: red;">Hello Buddy!</h1>
+    <p style="color: blue;">I am learning CSS.</p>
+
+</body>
+</html> 
