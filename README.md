@@ -1,2 +1,0 @@
-# css
-parctice man perfect
