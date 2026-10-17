@@ -1,0 +1,18 @@
+<blockquote id="quote">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</blockquote>
+Phasellus eget velit sagittis.
+
+
+<style>body {
+  font-size: small;
+  background-color: #f0f0f0;
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  background-color: skyblue;
+  color: red;
+}</style>
