@@ -1,0 +1,273 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 245px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    padding: 30px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.menu p,
+.more p {
+    padding: 13px 5px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.menu p:hover,
+.more p:hover {
+    background-color: #eee;
+}
+
+.more {
+    margin-top: 30px;
+}
+
+
+/* Main Content */
+.main {
+    width: 470px;
+    margin-left: 320px;
+    padding-top: 25px;
+}
+
+
+/* Stories */
+.stories {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: white;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow-x: auto;
+}
+
+.story {
+    text-align: center;
+    min-width: 65px;
+}
+
+.story img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 3px solid #ff0055;
+    padding: 2px;
+    object-fit: cover;
+}
+
+.story p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+
+/* Post */
+.post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+.post-header img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.post-header span {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.post-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.bookmark {
+    margin-left: auto;
+}
+
+.likes,
+.post > p {
+    padding: 0 12px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.comments {
+    color: gray;
+}
+
+.add-comment {
+    display: flex;
+    padding: 10px 12px;
+    border-top: 1px solid #eee;
+}
+
+.add-comment input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.add-comment button {
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Right Sidebar */
+.right-sidebar {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+.profile,
+.suggestion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.profile img,
+.suggestion img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.profile p,
+.suggestion p {
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.profile a,
+.suggestion a {
+    margin-left: auto;
+    text-decoration: none;
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.right-sidebar h4 {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .right-sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 280px;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .sidebar {
+        width: 65px;
+        padding: 15px 5px;
+    }
+
+    .logo {
+        font-size: 0;
+        margin-bottom: 25px;
+    }
+
+    .logo::after {
+        content: "📸";
+        font-size: 25px;
+    }
+
+    .menu p,
+    .more p {
+        font-size: 0;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .menu p::first-letter,
+    .more p::first-letter {
+        font-size: 22px;
+    }
+
+    .main {
+        width: calc(100% - 65px);
+        margin-left: 65px;
+        padding-top: 10px;
+    }
+
+    .stories {
+        border-radius: 0;
+        margin-bottom: 15px;
+    }
+
+    .post {
+        border-radius: 0;
+    }
+
+    .post-image {
+        height: auto;
+        max-height: 500px;
+    }
+}
