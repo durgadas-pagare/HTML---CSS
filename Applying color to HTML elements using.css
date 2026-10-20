@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="boxLeft">
+    <p>This is the first box.</p>
+  </div>
+  <div class="boxRight">
+    <p>This is the second box.</p>
+  </div>
+</div>
+
+
+===============css===============
+
+
+.wrapper {
+  height: 110px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  font:
+    28px "Marker Felt",
+    "Zapfino",
+    cursive;
+  border: 6px solid mediumturquoise;
+}
+
+div {
+  flex: 1;
+}
